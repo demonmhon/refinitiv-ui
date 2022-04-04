@@ -77,7 +77,7 @@ const plugins = [
 ];
 
 // Reporters
-const reporters = ['dots'];
+const reporters = ['mocha'];
 
 const baseConfig = {
   autoWatch: argv.watch,
@@ -123,7 +123,8 @@ const baseConfig = {
   preprocessors,
   reporters,
   mochaReporter: {
-    showDiff: true
+    showDiff: true,
+    output: 'minimal'
   },
   restartOnFileChange: false,
   client: {
