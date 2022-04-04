@@ -77,7 +77,7 @@ const plugins = [
 ];
 
 // Reporters
-const reporters = ['mocha', 'dots'];
+const reporters = ['dots'];
 
 const baseConfig = {
   autoWatch: argv.watch,
