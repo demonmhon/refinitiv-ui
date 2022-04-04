@@ -45,7 +45,7 @@
     for="input"
     part="label"
   >
-    Page 1
+    Page xx
   </label>
   <input
     aria-valuemin="1"
