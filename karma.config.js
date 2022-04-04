@@ -124,7 +124,7 @@ const baseConfig = {
   reporters,
   mochaReporter: {
     showDiff: true,
-    output: 'minimal'
+    // output: 'minimal'
   },
   restartOnFileChange: false,
   client: {
