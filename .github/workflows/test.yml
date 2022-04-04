@@ -1,7 +1,7 @@
 name: Test
-on: [pull_request] # Triggers on any branch
+on: [push] # Triggers on any branch
 env:
-  BASE_SHA: ${{ github.event.pull_request.base.sha }}
+  BASE_SHA: ef9aa89018eedc3ee64b6a0a82ec90af57368f5e
 jobs:
   build:
     runs-on: ubuntu-latest
