@@ -128,6 +128,7 @@ const baseConfig = {
   },
   restartOnFileChange: false,
   client: {
+    captureConsole: false,
     mocha: {
       reporter: 'html'
     }
