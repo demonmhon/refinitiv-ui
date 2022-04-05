@@ -2,6 +2,7 @@ name: Test
 on: [push] # Triggers on any branch
 env:
   BASE_SHA: ef9aa89018eedc3ee64b6a0a82ec90af57368f5e
+  CI_ENV: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -72,4 +73,6 @@ jobs:
 
       - name: Test
         # TODO: `@refinitiv/core` has test coverage below threshold on Firefox
-        run: npm run test:affected -- --base=$BASE_SHA --browsers firefox --includeCoverage false
+        run: |
+          export CI=$CI_ENV
+          npm run test:affected -- --base=$BASE_SHA --browsers firefox --includeCoverage false
