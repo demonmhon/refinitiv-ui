@@ -73,6 +73,4 @@ jobs:
 
       - name: Test
         # TODO: `@refinitiv/core` has test coverage below threshold on Firefox
-        run: |
-          export CI=$CI_ENV
-          npm run test:affected -- --base=$BASE_SHA --browsers firefox --includeCoverage false
+        run: npm run test:affected -- --base=$BASE_SHA --browsers firefox --includeCoverage false
