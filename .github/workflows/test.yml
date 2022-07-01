@@ -31,22 +31,8 @@ jobs:
         if: steps.setup.outputs.cache-build-hit != 'true'
         run: npm run build
 
-  lint:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Setup resources and environment
-        uses: ./.github/actions/setup
-
-      - name: Lint
-        run: npm run lint
   test:
-    needs: lint
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: 'BrowserStack Env Setup' # Invokes the setup-env action
