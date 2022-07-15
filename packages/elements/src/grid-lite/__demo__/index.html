@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ef-grid-lite</title>
+  <link rel="stylesheet" href="/node_modules/@refinitiv-ui/demo-block/demo.css">
+</head>
+
+<body>
+  <script type="module">
+    import '@refinitiv-ui/demo-block';
+    import '@refinitiv-ui/elements/grid-lite';
+  </script>
+
+  <!-- SIMPLE GRID -->
+  <demo-block header="Simple" layout="normal">
+    <ef-grid-lite id="grid"></ef-grid-lite>
+  </demo-block>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const fields = ['intCol', 'strCol', 'floatCol'];
+    grid.config = {
+      columns: [
+        { title: 'No.', field: fields[0], width: 70 },
+        { title: 'Name', field: fields[1], minWidth: 550 },
+        { title: 'Price (GBP)', field: fields[2], alignment: 'right' }
+      ],
+      dataModel: {
+        fields: fields,
+        data: [
+          [1, 'CLUCK & DUCK WINGS', 5.50],
+          [2, 'BAKED CHEDDAR MUSHROOMS', 7.00],
+          [3, 'RIBEYE 16OZ', 25.00],
+          [4, 'SLOW COOKED BONELESS BEEF RIB', 20.00],
+          [5, 'CLASSIC CREME BRULEE (V)', 5.75]
+        ]
+      }
+    };
+  </script>
+</body>
+
+</html>
