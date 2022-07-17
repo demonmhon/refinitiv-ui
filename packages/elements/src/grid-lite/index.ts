@@ -7,6 +7,7 @@ import {
   css
 } from '@refinitiv-ui/core';
 import { customElement } from '@refinitiv-ui/core/decorators/custom-element.js';
+import { ifDefined } from '@refinitiv-ui/core/directives/if-defined.js';
 import { property } from '@refinitiv-ui/core/decorators/property.js';
 import { VERSION } from '../version.js';
 import '../icon/index.js';
@@ -81,10 +82,15 @@ export class GridLite extends BasicElement {
 
   private tableHeader (): TemplateResult {
     const headers = this.config?.columns.map(col => {
+      const { width, minWidth, alignment, title } = col;
+      const styles = (width || minWidth) ? [
+        (width) ? `width:${width}px;` : null,
+        (minWidth) ? `min-width:${minWidth}px;` : null
+      ].join('') : undefined;
       return (
         html`
-          <th>
-            <div class="cell header-cell">${col.title}</div>
+          <th align="${ifDefined(alignment)}" style="${ifDefined(styles)}">
+            <div class="cell header-cell">${title}</div>
           </th>
         `
       );
@@ -94,7 +100,10 @@ export class GridLite extends BasicElement {
 
   private tableBody (): TemplateResult {
     const rows = this.config?.dataModel?.data.map(row => {
-      const cols = row.map(col => (html`<td><div class="cell body-cell">${col}<div></td>`));
+      const cols = row.map((col, colIndex) => {
+        const align = this.config?.columns[colIndex].alignment;
+        return (html`<td align="${ifDefined(align)}"><div class="cell body-cell">${col}<div></td>`);
+      });
       return html`<tr>${cols}</tr>`;
     });
     return html`<tbody>${rows}</tbody>`;

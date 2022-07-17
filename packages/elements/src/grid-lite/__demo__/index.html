@@ -24,12 +24,11 @@
     const fields = ['intCol', 'strCol', 'floatCol'];
     grid.config = {
       columns: [
-        { title: 'No.', field: fields[0], width: 70 },
-        { title: 'Name', field: fields[1], minWidth: 550 },
-        { title: 'Price (GBP)', field: fields[2], alignment: 'right' }
+        { title: 'No.', width: 70 },
+        { title: 'Name', minWidth: 550 },
+        { title: 'Price (GBP)', alignment: 'right' }
       ],
       dataModel: {
-        fields: fields,
         data: [
           [1, 'CLUCK & DUCK WINGS', 5.50],
           [2, 'BAKED CHEDDAR MUSHROOMS', 7.00],
