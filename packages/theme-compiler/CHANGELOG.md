@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.1.0...@refinitiv-ui/theme-compiler@6.1.1) (2022-11-07)
+
+**Note:** Version bump only for package @refinitiv-ui/theme-compiler
+
+
+
+
+
+# [6.1.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.0.4...@refinitiv-ui/theme-compiler@6.1.0) (2022-11-07)
+
+
+### Features
+
+* remove elf global and replace with eventListener ([#511](https://github.com/Refinitiv/refinitiv-ui/issues/511)) ([d94c087](https://github.com/Refinitiv/refinitiv-ui/commit/d94c0875ea048c86f94ce35c6b2929f796252fff))
+
+
+
+
+
+## [6.0.4](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.0.3...@refinitiv-ui/theme-compiler@6.0.4) (2022-08-29)
+
+**Note:** Version bump only for package @refinitiv-ui/theme-compiler
+
+
+
+
+
+## [6.0.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.0.2...@refinitiv-ui/theme-compiler@6.0.3) (2022-08-02)
+
+**Note:** Version bump only for package @refinitiv-ui/theme-compiler
+
+
+
+
+
+## [6.0.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.0.1...@refinitiv-ui/theme-compiler@6.0.2) (2022-07-19)
+
+**Note:** Version bump only for package @refinitiv-ui/theme-compiler
+
+
+
+
+
 ## [6.0.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/theme-compiler@6.0.0...@refinitiv-ui/theme-compiler@6.0.1) (2022-06-20)
 
 **Note:** Version bump only for package @refinitiv-ui/theme-compiler

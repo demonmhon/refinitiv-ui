@@ -3,6 +3,114 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.4.0...@refinitiv-ui/docs@6.4.1) (2022-11-21)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+# [6.4.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.2.3...@refinitiv-ui/docs@6.4.0) (2022-11-07)
+
+
+### Features
+
+* **color-picker:** add accessibility ([#448](https://github.com/Refinitiv/refinitiv-ui/issues/448)) ([ced3b20](https://github.com/Refinitiv/refinitiv-ui/commit/ced3b208ab817975923a2feeba1f6488d30f046a))
+
+
+
+
+
+# [6.3.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.2.3...@refinitiv-ui/docs@6.3.0) (2022-11-07)
+
+
+### Features
+
+* **color-picker:** add accessibility ([#448](https://github.com/Refinitiv/refinitiv-ui/issues/448)) ([ced3b20](https://github.com/Refinitiv/refinitiv-ui/commit/ced3b208ab817975923a2feeba1f6488d30f046a))
+
+
+
+
+
+## [6.2.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.2.2...@refinitiv-ui/docs@6.2.3) (2022-10-26)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+## [6.2.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.2.1...@refinitiv-ui/docs@6.2.2) (2022-10-10)
+
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+## [6.2.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.2.0...@refinitiv-ui/docs@6.2.1) (2022-09-26)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+# [6.2.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.1.1...@refinitiv-ui/docs@6.2.0) (2022-09-14)
+
+
+### Features
+
+* **color-picker:** add color picker ([#444](https://github.com/Refinitiv/refinitiv-ui/issues/444)) ([3718003](https://github.com/Refinitiv/refinitiv-ui/commit/37180039a77d908acd731c89067ecfce3f23955f))
+
+
+
+
+
+## [6.1.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.1.0...@refinitiv-ui/docs@6.1.1) (2022-08-29)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+# [6.1.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.0.4...@refinitiv-ui/docs@6.1.0) (2022-08-16)
+
+
+### Features
+
+* **interactive-chart:** add disabledLegend option to hide data legend ([#421](https://github.com/Refinitiv/refinitiv-ui/issues/421)) ([32a6d7b](https://github.com/Refinitiv/refinitiv-ui/commit/32a6d7b1889597a7ae804edbb08fc95fc5c5a04e))
+
+
+
+
+
+## [6.0.4](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.0.3...@refinitiv-ui/docs@6.0.4) (2022-08-02)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+## [6.0.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.0.2...@refinitiv-ui/docs@6.0.3) (2022-07-20)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
+## [6.0.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@6.0.1...@refinitiv-ui/docs@6.0.2) (2022-07-19)
+
+**Note:** Version bump only for package @refinitiv-ui/docs
+
+
+
+
+
 ## [6.0.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/docs@5.1.0...@refinitiv-ui/docs@6.0.1) (2022-06-20)
 
 **Note:** Version bump only for package @refinitiv-ui/docs

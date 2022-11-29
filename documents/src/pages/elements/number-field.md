@@ -15,7 +15,6 @@ const curr1 = document.getElementById('curr1');
 const cf = document.getElementById('cf');
 const out = document.getElementById('out');
 
-out.value = (curr1.value * cf.value).toFixed(2);
 curr1.addEventListener('value-changed', () => {
   out.value = (curr1.value * cf.value).toFixed(2);
 });
@@ -43,7 +42,7 @@ ef-number-field {
   <label for="cf" class="label">Conversion Rate</label>
   <ef-number-field value="38.62" min="0" step="0.01" id="cf"></ef-number-field>
   <label for="out" class="label">Thai Baht (฿)</label>
-  <ef-number-field readonly value="12000" no-spinner id="out"></ef-number-field>
+  <ef-number-field readonly value="38620.00" no-spinner id="out"></ef-number-field>
 </ef-panel>
 ```
 ::
@@ -128,7 +127,7 @@ document.getElementById('mm').value = '-15';
 ```
 
 ## Set input step
-The step attribute specifies the interval between valid numbers. For instance, when `step="2"`, valid values Would only be even numbers e.g. 2,4,6,8....
+The step attribute specifies the interval between valid numbers. For instance, when `step="2"`, valid values would only be even numbers e.g. 2,4,6,8... Alternatively, specify the `step="any"` to allow any value. 
 
 ::
 ```javascript
@@ -136,6 +135,8 @@ The step attribute specifies the interval between valid numbers. For instance, w
 ```
 ```html
 <ef-number-field placeholder="Even numbers only" step="2"></ef-number-field>
+
+<ef-number-field placeholder="Step any allow any number" step="any"></ef-number-field>
 ```
 ::
 

@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.2.1...@refinitiv-ui/utils@6.2.2) (2022-11-07)
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+
+
+
+
+## [6.2.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.2.0...@refinitiv-ui/utils@6.2.1) (2022-11-07)
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+
+
+
+
+# [6.2.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.1.1...@refinitiv-ui/utils@6.2.0) (2022-10-26)
+
+
+### Features
+
+* **utils:** add util color `readableColor` ([#487](https://github.com/Refinitiv/refinitiv-ui/issues/487)) ([42b3ea2](https://github.com/Refinitiv/refinitiv-ui/commit/42b3ea26c2e810cf285ccaab56fd0e5e4d3fdc23))
+
+
+
+
+
+## [6.1.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.1.0...@refinitiv-ui/utils@6.1.1) (2022-09-26)
+
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+* Update all formatjs dependencies to support typescript 4.8 ([#454](https://github.com/Refinitiv/refinitiv-ui/pull/454)) ([5337b97](https://github.com/Refinitiv/refinitiv-ui/commit/5337b97dc6958f84b36bdbffdea6dfbbc5203596))
+* Upgrade typescript to 4.8.3 ([#454](https://github.com/Refinitiv/refinitiv-ui/pull/454)) ([5337b97](https://github.com/Refinitiv/refinitiv-ui/commit/5337b97dc6958f84b36bdbffdea6dfbbc5203596))
+
+
+
+
+# [6.1.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.0.4...@refinitiv-ui/utils@6.1.0) (2022-09-14)
+
+
+### Features
+
+Add `isHex()` and `removeHashSign()` color utility ([#444](https://github.com/Refinitiv/refinitiv-ui/issues/444)) ([3718003](https://github.com/Refinitiv/refinitiv-ui/commit/37180039a77d908acd731c89067ecfce3f23955f))
+
+
+
+
+
+## [6.0.4](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.0.3...@refinitiv-ui/utils@6.0.4) (2022-08-29)
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+
+
+
+
+## [6.0.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.0.2...@refinitiv-ui/utils@6.0.3) (2022-08-02)
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+
+
+
+
+## [6.0.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.0.1...@refinitiv-ui/utils@6.0.2) (2022-07-19)
+
+**Note:** Version bump only for package @refinitiv-ui/utils
+
+
+
+
+
 ## [6.0.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/utils@6.0.0...@refinitiv-ui/utils@6.0.1) (2022-06-20)
 
 

@@ -3,6 +3,104 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.9...@refinitiv-ui/core@6.2.0) (2022-11-07)
+
+
+### Features
+
+* remove elf global and replace with eventListener ([#511](https://github.com/Refinitiv/refinitiv-ui/issues/511)) ([d94c087](https://github.com/Refinitiv/refinitiv-ui/commit/d94c0875ea048c86f94ce35c6b2929f796252fff))
+
+
+
+
+
+# [6.1.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.9...@refinitiv-ui/core@6.1.0) (2022-11-07)
+
+
+### Features
+
+* remove elf global and replace with eventListener ([#511](https://github.com/Refinitiv/refinitiv-ui/issues/511)) ([d94c087](https://github.com/Refinitiv/refinitiv-ui/commit/d94c0875ea048c86f94ce35c6b2929f796252fff))
+
+
+
+
+
+## [6.0.9](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.8...@refinitiv-ui/core@6.0.9) (2022-10-26)
+
+**Note:** Version bump only for package @refinitiv-ui/core
+
+
+
+
+
+## [6.0.8](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.7...@refinitiv-ui/core@6.0.8) (2022-10-10)
+
+
+### Bug Fixes
+
+* **tab:** trigger resize observer when label changes to make tab bar show scroll button correctly ([#480](https://github.com/Refinitiv/refinitiv-ui/issues/480)) ([93e384b](https://github.com/Refinitiv/refinitiv-ui/commit/93e384b845f87f0f3e074d4672065e7305a85c26))
+
+
+
+
+
+## [6.0.7](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.6...@refinitiv-ui/core@6.0.7) (2022-09-26)
+
+
+**Note:** Version bump only for package @refinitiv-ui/core
+
+* Update all formatjs dependencies to support typescript 4.8 ([#454](https://github.com/Refinitiv/refinitiv-ui/pull/454)) ([5337b97](https://github.com/Refinitiv/refinitiv-ui/commit/5337b97dc6958f84b36bdbffdea6dfbbc5203596))
+* Upgrade typescript to 4.8.3 ([#454](https://github.com/Refinitiv/refinitiv-ui/pull/454)) ([5337b97](https://github.com/Refinitiv/refinitiv-ui/commit/5337b97dc6958f84b36bdbffdea6dfbbc5203596))
+
+
+
+
+## [6.0.6](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.5...@refinitiv-ui/core@6.0.6) (2022-09-14)
+
+**Note:** Version bump only for package @refinitiv-ui/core
+
+
+
+
+
+## [6.0.5](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.4...@refinitiv-ui/core@6.0.5) (2022-08-29)
+
+**Note:** Version bump only for package @refinitiv-ui/core
+
+
+
+
+
+## [6.0.4](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.3...@refinitiv-ui/core@6.0.4) (2022-08-16)
+
+
+### Bug Fixes
+
+* upgrade `lit` version ([#383](https://github.com/Refinitiv/refinitiv-ui/issues/383)) ([0676017](https://github.com/Refinitiv/refinitiv-ui/commit/06760179790718a502d6c95d42e34e2da3544709))
+
+
+
+
+
+## [6.0.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.2...@refinitiv-ui/core@6.0.3) (2022-08-02)
+
+**Note:** Version bump only for package @refinitiv-ui/core
+
+
+
+
+
+## [6.0.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.1...@refinitiv-ui/core@6.0.2) (2022-07-19)
+
+
+### Bug Fixes
+
+* **core:** fix notice to support type ([#375](https://github.com/Refinitiv/refinitiv-ui/issues/375)) ([cd41db3](https://github.com/Refinitiv/refinitiv-ui/commit/cd41db3c8f6381763d3175841807827a2a60d1d0))
+
+
+
+
+
 ## [6.0.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/core@6.0.0...@refinitiv-ui/core@6.0.1) (2022-06-20)
 
 **Note:** Version bump only for package @refinitiv-ui/core

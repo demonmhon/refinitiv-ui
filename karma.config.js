@@ -7,10 +7,7 @@ const { injectLitPolyfill } = require('./scripts/karma/plugins/inject-lit-polyfi
 const {
   defaultBrowsers,
   availableBrowsers,
-  defaultBSBrowsers,
-  supportedBSBrowsers,
-  availableBSBrowsers,
-  BSConfig
+  BrowserStack
 } = require('./browsers.config');
 
 const argv = yargs(hideBin(process.argv))
@@ -49,7 +46,7 @@ const argv = yargs(hideBin(process.argv))
   .option('browserstack', {
     type: 'array',
     alias: 'bs',
-    choices: availableBSBrowsers,
+    choices: BrowserStack.availableBrowsers,
     description: 'Run units test on BrowserStack and specific browser(s)'
   })
   .requiresArg('browserstack')
@@ -102,6 +99,12 @@ const plugins = [
 const reporters = ['mocha'];
 
 const baseConfig = {
+  /**
+   * Need to set `listenAddress` and `hostname` to prevent the `node-fetch` bug on `Node 17 and 18`
+   * @link https://github.com/node-fetch/node-fetch/issues/1624
+   */
+  listenAddress: 'localhost',
+  hostname: 'localhost',
   autoWatch: argv.watch,
   singleRun: !argv.watch,
   basePath: ROOT, // must be in the root in order for node_modules to be resolved correctly
@@ -256,17 +259,20 @@ if (argv.browserstack && !argv.watch) {
   const browserStackLaunchers = {};
   bsOption.forEach((option) => {
     if(option === 'default') {
-      defaultBSBrowsers.forEach(defaultBS => {
-        browserStackLaunchers[defaultBS] = BSConfig[defaultBS];
+      BrowserStack.defaultBrowsers.forEach(defaultBS => {
+        browserStackLaunchers[defaultBS] = BrowserStack.config[defaultBS];
       });
     }
     else if(option === 'supported') {
-      supportedBSBrowsers.forEach(supportedBS => {
-        browserStackLaunchers[supportedBS] = BSConfig[supportedBS];
+      BrowserStack.supportedBrowsers.forEach(supportedBS => {
+        // Disable testing on Safari, we have to check all test cases are passed before enabling it again
+        if (!supportedBS.includes('safari')) {
+          browserStackLaunchers[supportedBS] = BrowserStack.config[supportedBS];
+        }
       });
     }
     else {
-      browserStackLaunchers[option] = BSConfig[option];
+      browserStackLaunchers[option] = BrowserStack.config[option];
     }
   });
 

@@ -267,7 +267,6 @@ describe('tree/Tree', () => {
       event = await oneEvent(el, 'expanded-changed');
       expect(event.detail.value, 'Group should be expanded').to.be.true;
       expect(event.detail.item, 'Item should be the same as the original').to.equal(nestedData[0]);
-      el.dispatchEvent(keyArrowDown);
       setTimeout(() => el.dispatchEvent(keyArrowLeft));
       event = await oneEvent(el, 'expanded-changed');
       expect(event.detail.value, 'Group should be collapsed').to.be.false;
@@ -385,6 +384,50 @@ describe('tree/Tree', () => {
       expect(el.values).to.deep.equal(['1.1', '1.2', '4']);
     });
 
+    it('Uncheck all items correctly with deep nested data', async () => {
+      const el = await fixture('<ef-tree multiple></ef-tree>');
+      el.data = deepNestedData;
+      await elementUpdated(el);
+      el.uncheckAll();
+      el.expandAll();
+      await elementUpdated(el);
+      const item = el.children[3];
+      const itemChild = el.children[4];
+      itemChild.click();
+      await elementUpdated(el);
+      el.uncheckAll();
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(0);
+      el.uncheckAll();
+      await elementUpdated(el);
+      el.values = ['1.3.1.1'];
+      await elementUpdated(el);
+      el.uncheckAll();
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(0);
+      expect(itemChild.checkedState).to.equal(0);
+    });
+
+    it('check/uncheck all items correctly in no-relation with deep nested data', async () => {
+      const el = await fixture('<ef-tree multiple no-relation></ef-tree>');
+      el.data = deepNestedData;
+      await elementUpdated(el);
+      el.uncheckAll();
+      el.expandAll();
+      await elementUpdated(el);
+      const item = el.children[3];
+      const itemChild = el.children[4];
+      itemChild.click();
+      await elementUpdated(el);
+      el.uncheckAll();
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(0);
+      el.checkAll();
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(1);
+      expect(itemChild.checkedState).to.equal(1);
+    });
+
     it('Can set values programmatically', async () => {
       const el = await fixture('<ef-tree multiple></ef-tree>');
       el.data = nestedData;
@@ -396,6 +439,29 @@ describe('tree/Tree', () => {
       await elementUpdated(el);
       expect(el.value).to.equal('1.1');
       expect(el.values).to.deep.equal(['1.1', '1.2']);
+    });
+
+    it('Update the parent selected state correctly', async () => {
+      const el = await fixture('<ef-tree multiple></ef-tree>');
+      el.data = nestedData;
+      await elementUpdated(el);
+      const item = el.children[0];
+      expect(item.checkedState).to.equal(-1); // Indeterminate
+      el.values = [];
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(0); // Unchecked
+      el.values = ['1.1'];
+      await elementUpdated(el);
+      expect(item.checkedState).to.equal(-1); // Indeterminate
+    });
+
+    it('Should set values to empty array when set invalid values', async () => {
+      const el = await fixture('<ef-tree multiple></ef-tree>');
+      el.data = nestedData;
+      await elementUpdated(el);
+      el.values = '1.1';
+      await elementUpdated(el);
+      expect(el.values).to.deep.equal([]);
     });
   });
 
@@ -494,44 +560,44 @@ describe('tree/Tree', () => {
       const el = await fixture('<ef-tree></ef-tree>');
       el.data = flatData;
       await elementUpdated(el);
-  
+
       el.children[0].click();
       await elementUpdated(el);
-  
+
       el.query = 'Item 4';
       await elementUpdated(el);
-  
+
       el.children[0].click();
       await elementUpdated(el);
-  
+
       expect(el.value).to.equal('4', 'Value should be update when selecting a new item on filter applied.');
     });
-    
+
     it('Text filter applied, check/uncheck item and switch between single and multiple selection mode', async () => {
       const el = await fixture('<ef-tree></ef-tree>');
       el.data = flatData;
       await elementUpdated(el);
-  
+
       el.children[0].click();
       await elementUpdated(el);
-  
+
       el.query = 'Item 4';
       await elementUpdated(el);
-  
+
       el.multiple = true
       await elementUpdated(el);
-  
+
       el.uncheckAll();
       await elementUpdated(el);
       expect(el.value).to.equal('1', 'hidden selected item in multiple mode shouldn\'t unchecked');
-  
+
       el.multiple = false
       await elementUpdated(el);
-  
+
       el.children[0].click();
       await elementUpdated(el);
       expect(el.value).to.equal('4', 'Value should be update when selecting a new item on filter applied.');
-  
+
     });
   });
 });

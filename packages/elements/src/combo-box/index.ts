@@ -504,7 +504,7 @@ export class ComboBox<T extends DataItem = ItemData> extends FormFieldElement {
    * Mark combobox with loading flag
    * Used in conjunction with data promise
    */
-  @property({ type: String, reflect: true })
+  @property({ type: Boolean, reflect: true })
   protected loading = false;
 
   /**
@@ -969,7 +969,10 @@ export class ComboBox<T extends DataItem = ItemData> extends FormFieldElement {
       this.notifyPropertyChange('value', inputText);
     }
 
-    this.setOpened(true);
+    // The popup can only be opened if input element has focus
+    if (this.shadowRoot && this.shadowRoot.activeElement === this.inputElement) {
+      this.setOpened(true);
+    }
   }
 
   /**
@@ -1242,12 +1245,13 @@ export class ComboBox<T extends DataItem = ItemData> extends FormFieldElement {
 
   /**
    * Returns a list template
+   * TODO: Remove empty `tabindex`. We need better flexibility on removing tabindex value from ControlElement
    */
   protected get listTemplate (): TemplateResult {
     return html`
       <ef-list
         id="internal-list"
-        tabindex="-1"
+        tabindex
         @value-changed="${this.onListValueChanged}"
         .data="${this.composer}"
         .multiple="${this.multiple}"
@@ -1262,7 +1266,7 @@ export class ComboBox<T extends DataItem = ItemData> extends FormFieldElement {
    */
   protected get noItemsTemplate (): TemplateResult | undefined {
     if (!this.freeText) {
-      return html`<ef-item disabled>${this.t('NO_OPTIONS')}</ef-item>`;
+      return html`<ef-list-item disabled>${this.t('NO_OPTIONS')}</ef-list-item>`;
     }
   }
 

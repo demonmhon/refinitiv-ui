@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.2.0...@refinitiv-ui/elemental-theme@6.2.1) (2022-11-07)
+
+**Note:** Version bump only for package @refinitiv-ui/elemental-theme
+
+
+
+
+
+# [6.2.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.1.0...@refinitiv-ui/elemental-theme@6.2.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **button:** change button and icon transparent outline style ([#515](https://github.com/Refinitiv/refinitiv-ui/issues/515)) ([4ba091c](https://github.com/Refinitiv/refinitiv-ui/commit/4ba091c2c11da06ce1218908a3ddb3cc18d9b412))
+
+
+### Features
+
+* remove elf global and replace with eventListener ([#511](https://github.com/Refinitiv/refinitiv-ui/issues/511)) ([d94c087](https://github.com/Refinitiv/refinitiv-ui/commit/d94c0875ea048c86f94ce35c6b2929f796252fff))
+
+
+
+
+
+# [6.1.0](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.5...@refinitiv-ui/elemental-theme@6.1.0) (2022-09-14)
+
+
+### Bug Fixes
+
+* **interactive-chart:** fix left position on legend ([#449](https://github.com/Refinitiv/refinitiv-ui/issues/449)) ([ede4f93](https://github.com/Refinitiv/refinitiv-ui/commit/ede4f93776671f9261675a3a0d5bd32a62c317d5))
+
+
+### Features
+
+* **color-picker:** add color picker ([#444](https://github.com/Refinitiv/refinitiv-ui/issues/444)) ([3718003](https://github.com/Refinitiv/refinitiv-ui/commit/37180039a77d908acd731c89067ecfce3f23955f))
+
+
+
+
+
+## [6.0.5](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.4...@refinitiv-ui/elemental-theme@6.0.5) (2022-08-29)
+
+**Note:** Version bump only for package @refinitiv-ui/elemental-theme
+
+
+
+
+
+## [6.0.4](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.3...@refinitiv-ui/elemental-theme@6.0.4) (2022-08-02)
+
+**Note:** Version bump only for package @refinitiv-ui/elemental-theme
+
+
+
+
+
+## [6.0.3](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.2...@refinitiv-ui/elemental-theme@6.0.3) (2022-07-20)
+
+
+### Bug Fixes
+
+* **tree:** extend `list` style without importing `ef-list-item` ([#401](https://github.com/Refinitiv/refinitiv-ui/issues/401)) ([65cc6d3](https://github.com/Refinitiv/refinitiv-ui/commit/65cc6d3016869b346f342b43fe4a7ffee7c4b761))
+
+
+
+
+
+## [6.0.2](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.1...@refinitiv-ui/elemental-theme@6.0.2) (2022-07-19)
+
+
+### Bug Fixes
+
+* **datetime-picker:** inputs misalignment ([#373](https://github.com/Refinitiv/refinitiv-ui/issues/373)) ([337679b](https://github.com/Refinitiv/refinitiv-ui/commit/337679bfdd8b28f2d60fccbaac8f03c029c30b76))
+* **list:** item should not receive focus when click ([#272](https://github.com/Refinitiv/refinitiv-ui/issues/272)) ([e2293e3](https://github.com/Refinitiv/refinitiv-ui/commit/e2293e37126a446d5c1d16be1e5eb503425534f3))
+* **tab-bar:** resize callback is not fired when a new tab has been added ([#389](https://github.com/Refinitiv/refinitiv-ui/issues/389)) ([13408e1](https://github.com/Refinitiv/refinitiv-ui/commit/13408e15302a19cd614fdd5f1b4af9be5f1881bd))
+
+
+
+
+
 ## [6.0.1](https://github.com/Refinitiv/refinitiv-ui/compare/@refinitiv-ui/elemental-theme@6.0.0...@refinitiv-ui/elemental-theme@6.0.1) (2022-06-20)
 
 

@@ -1,6 +1,6 @@
 # Element Framework (EF)
 
-[![Testing](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test.yml/badge.svg?branch=v6)](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test.yml?query=branch%3Av6+)
+[![Test](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test_coverage.yml/badge.svg)](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test_coverage.yml)
 [![Nightly Test](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test_nightly.yml/badge.svg?event=schedule)](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/test_nightly.yml)
 [![Production Release](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/prod_release.yml/badge.svg?branch=v6)](https://github.com/Refinitiv/refinitiv-ui/actions/workflows/prod_release.yml)
 
@@ -26,6 +26,7 @@ Getting started and usage guide are available from this [documentation](https://
 | [@refinitiv-ui/theme-compiler](https://github.com/Refinitiv/refinitiv-ui/tree/v6/packages/theme-compiler)  | [![npm version](https://badgen.net/npm/v/@refinitiv-ui/theme-compiler)](https://www.npmjs.com/package/@refinitiv-ui/theme-compiler)   | [![change log](https://badgen.net/badge/icon/changelog/grey?icon=git&label)](https://github.com/Refinitiv/refinitiv-ui/blob/v6/packages/theme-compiler/CHANGELOG.md)  |
 | [@refinitiv-ui/translate](https://github.com/Refinitiv/refinitiv-ui/tree/v6/packages/translate)       | [![npm version](https://badgen.net/npm/v/@refinitiv-ui/translate)](https://www.npmjs.com/package/@refinitiv-ui/translate)             | [![change log](https://badgen.net/badge/icon/changelog/grey?icon=git&label)](https://github.com/Refinitiv/refinitiv-ui/blob/v6/packages/translate/CHANGELOG.md)       |
 | [@refinitiv-ui/utils](https://github.com/Refinitiv/refinitiv-ui/tree/v6/packages/utils)           | [![npm version](https://badgen.net/npm/v/@refinitiv-ui/utils)](https://www.npmjs.com/package/@refinitiv-ui/utils)                     | [![change log](https://badgen.net/badge/icon/changelog/grey?icon=git&label)](https://github.com/Refinitiv/refinitiv-ui/blob/v6/packages/utils/CHANGELOG.md)           |
+| [create-efx](https://github.com/Refinitiv/refinitiv-ui/tree/v6/packages/create-efx)           | [![npm version](https://badgen.net/npm/v/create-efx)](https://www.npmjs.com/package/create-efx)                     | [![change log](https://badgen.net/badge/icon/changelog/grey?icon=git&label)](https://github.com/Refinitiv/refinitiv-ui/blob/v6/packages/create-efx/CHANGELOG.md)           |
 
 
 # License Information
@@ -64,6 +65,7 @@ Element Framework is using monorepo. This repository has elements, supporting mo
 
 * `packages/configurations` - Configuration file for element development e.g. eslint, typescript
 * `packages/core` - Core module of element e.g. base classes, element registration
+* `packages/create-efx` - Initializer for creating a new EFX elements
 * `packages/demo-block` - Use in demo page of each element to demonstrate element's features
 * `packages/elemental-theme` - Base theme to extend to design system theme e.g. Halo Theme
 * `packages/elements` - All elements in Element Framework
@@ -136,7 +138,7 @@ npm run lint:all
 | Option                    | Description                                                                                                                                                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `--browsers` or `-b`      | You can specific browser(s) to run the unit test. List of available browsers are following: `chrome`, `firefox` and `ie` <br>You can check the list of available browsers by add option `--help`.  <br>Usage: `npm run test button -- --browsers chrome firefox` |
-| `--browserstack` or `-bs` | You can run test on BrowserStack with specific browser(s). List of available browsers are following: `chrome`, `firefox`, `edge_previous`, and aliases `default`, `supported`, and etc. <br>This command option required BrowserStack API Key you must setting the three environment variables `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, and `BROWSERSTACK_BUILD`. You can create API key from [here](https://www.browserstack.com/accounts/settings) <br>Usage: `npm run test button -- --browserstack chrome firefox_previous`
+| `--browserstack` or `--bs` | You can run test on BrowserStack with specific browser(s). List of available browsers are following: `chrome`, `firefox`, `edge_previous`, and aliases `default`, `supported`, and etc. <br>This command option required BrowserStack API Key you must setting the three environment variables `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, and `BROWSERSTACK_BUILD`(specify a name for a logical group of tests, set your name if run command on local machine). You can create API key from [here](https://www.browserstack.com/accounts/profile) <br>Usage: `npm run test button -- --browserstack chrome firefox_previous`
 | `--watch` or `-w`         | Run test and watch file change. <br>Usage: `npm run test button -- --watch`                                                                                                                                                                                      |
 | `--snapshots` or `-s`     | Update and prune snapshots (`--browsers` must be chrome). <br>Usage:`npm run test button -- --snapshots --browsers chrome`                                                                                                                                       |
 | `--fix`  or `-f`           | Run linting and fix the issues that can lead to bugs or inconsistencies with code health and style. <br>Usage:`npm run test button --fix`                                                                                                                        |
